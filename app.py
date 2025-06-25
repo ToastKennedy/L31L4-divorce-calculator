@@ -1,8 +1,8 @@
 import anthropic
+import streamlit as st
 
-client = anthropic.Anthropic(
     # defaults to os.environ.get("ANTHROPIC_API_KEY")
-    api_key="my_api_key",
+    api_key=st.secrets["ANTHROPIC_API_KEY"],
 )
 
 # Replace placeholders like {{AI_ASSISTANT_NAME_AND_DESCRIPTION}} with real values,
