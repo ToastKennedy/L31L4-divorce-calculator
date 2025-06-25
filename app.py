@@ -1,7 +1,7 @@
 import anthropic
 import streamlit as st
 
-    # defaults to os.environ.get("ANTHROPIC_API_KEY")
+   client = anthropic.Anthropic( # defaults to os.environ.get("ANTHROPIC_API_KEY")
     api_key=st.secrets["ANTHROPIC_API_KEY"],
 )
 
